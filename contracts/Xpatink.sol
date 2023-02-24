@@ -10,7 +10,7 @@ import "./Taxable.sol";
 import "./TaxDistributor.sol";
 import "./AntiSniper.sol";
 
-contract XaptInk is BaseErc20, AntiSniper, Burnable, Taxable {
+contract XPatInk is BaseErc20, AntiSniper, Burnable, Taxable {
 
     mapping(address => bool) public zkManualEnable;
     uint256 public zkTokenThreshold;

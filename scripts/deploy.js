@@ -7,7 +7,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const XpatInk = await hre.ethers.getContractFactory("Lock");
+  const XpatInk = await hre.ethers.getContractFactory("XPatInk");
   const xpatInk = await XpatInk.deploy();
 
   await xpatInk.deployed();
