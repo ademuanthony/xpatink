@@ -1,7 +1,7 @@
 require('dotenv').config();
 require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
-require('@openzeppelin/hardhat-upgrades');
+// require('@openzeppelin/hardhat-upgrades');
 
 module.exports = {
   defaultNetwork: "hardhat",
@@ -26,8 +26,8 @@ module.exports = {
       url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
       accounts: [process.env.PRIVATE_KEY]
     },
-    bsc: {
-      url: process.env.BSC_MAINNODE,
+    mainnet: {
+      url: "https://mainnet.infura.io/v3/",
       accounts: [process.env.PRIVATE_KEY]
     }
   },
@@ -39,7 +39,7 @@ module.exports = {
     }
   },
   solidity: {
-    version: "0.8.6",
+    version: "0.8.7",
     settings: {
       optimizer: {
         enabled: true,
